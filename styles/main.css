@@ -1,0 +1,161 @@
+:root {
+	background-color: rgb(39, 36, 34);
+	--secondary-bg-color: rgb(32, 32, 32);
+	--text-color: rgb(248, 248, 242);
+	--header-button-color: rgb(47, 49, 41);
+	--header-button-color-hover: rgb(85, 87, 80);
+	--header-button-color-current: rgb(249, 38, 114);
+	--header-button-color-current-hover: rgb(255, 104, 159);
+	--button-color: rgb(13, 63, 73);
+
+	--my-primary-color: rgb(253, 151, 31);
+	--my-secondary-color: rgb(102, 217, 239);
+	--my-tertiary-color: rgb(249, 38, 114);
+	
+	font-family: Arial;
+	color: var(--text-color);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	background-color: var(--secondary-bg-color);
+	padding: 0;
+	padding-top: 10px;
+	margin: 0;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	color: var(--my-primary-color);
+	font-weight: 900;
+	font-size: 40px;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--text-color);
+}
+
+.sticky-header {
+	position: sticky;
+	top: 0;
+	padding: 6px;
+	padding-left: 20px;
+	margin: 0;
+	background-color: var(--button-color);
+}
+
+.sticky-header-text {
+	padding: 0;
+	margin: 0;
+}
+
+.sub-title {
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+.header-button {
+	background-color: var(--header-button-color);
+	border-style: none;
+	color: var(--text-color);
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 35px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.header-button:hover {
+	background-color: var(--header-button-color-hover);
+}
+
+.header-button:active {
+	opacity: 0.5;
+}
+
+.header-button-current {
+	background-color: var(--header-button-color-current);
+	border-style: none;
+	color: var(--text-color);
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 35px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.header-button-current:hover {
+	background-color: var(--header-button-color-current-hover);
+}
+
+.header-button-current:active {
+	opacity: 0.5;
+}
+
+.header-button:hover {
+	background-color: var(--header-button-color-hover);
+}
+
+.header-button:active {
+	opacity: 0.5;
+}
+
+.video-stats {
+	font-size: 14px;
+	color: var(--my-secondary-color);
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.video-author {
+	font-size: 14px;
+	color: var(--my-tertiary-color);
+	margin-top: 0px;
+}
+
+.video-description {
+	font-size: 14px;
+	color: var(--text-color);
+	width: 300px;
+	margin-bottom: 100px;
+}
+
+.bottom-text {
+	margin-bottom: 50px;
+	font-size: 14px;
+	background-color: rgb(227, 65, 64);
+	color: white;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+
+}
+
+.span-example {
+	cursor: pointer;
+}
+.span-example:hover {
+	text-decoration: underline;
+}
