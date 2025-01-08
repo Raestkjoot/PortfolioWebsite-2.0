@@ -1,5 +1,13 @@
 :root {
-	background-color: rgb(39, 36, 34);
+	/* Colors */
+	--bg1: rgb(63, 60, 85);
+	--bg2: rgb(40, 42, 54);
+	--button: rgb(181, 37, 88);
+	--button-header: rgb(68, 71, 90);
+	--text: rgb(237, 237, 231);
+
+/* Default style */
+	background-color: var(--bg1);
 	--secondary-bg-color: rgb(32, 32, 32);
 	--text-color: rgb(248, 248, 242);
 	--header-button-color: rgb(47, 49, 41);
@@ -13,7 +21,7 @@
 	--my-tertiary-color: rgb(249, 38, 114);
 	
 	font-family: Arial;
-	color: var(--text-color);
+	color: var(--text);
 }
 
 body {
@@ -23,7 +31,7 @@ body {
 
 header {
 	text-align: center;
-	background-color: var(--secondary-bg-color);
+	background-color: var(--bg2);
 	padding: 0;
 	padding-top: 10px;
 	margin: 0;
@@ -33,7 +41,6 @@ h1 {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 20px;
-	color: var(--my-primary-color);
 	font-weight: 900;
 	font-size: 40px;
 }
@@ -44,7 +51,7 @@ div {
 }
 
 a {
-	color: var(--text-color);
+	color: var(--text);
 }
 
 .sticky-header {
@@ -53,7 +60,7 @@ a {
 	padding: 6px;
 	padding-left: 20px;
 	margin: 0;
-	background-color: var(--button-color);
+	background-color: var(--button);
 }
 
 .sticky-header-text {
@@ -69,9 +76,12 @@ a {
 }
 
 .header-button {
-	background-color: var(--header-button-color);
-	border-style: none;
-	color: var(--text-color);
+	background-color: transparent;
+	border-color: var(--bg1);
+	border-style: solid;
+	border-width: 4px;
+	border-bottom: none;
+	color: var(--text);
 	font-weight: bold;
 	font-size: 18px;
 	margin-top: 35px;
@@ -84,17 +94,21 @@ a {
 }
 
 .header-button:hover {
-	background-color: var(--header-button-color-hover);
+	background-color: var(--bg1);
+	opacity: 0.7;
 }
 
 .header-button:active {
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 .header-button-current {
-	background-color: var(--header-button-color-current);
-	border-style: none;
-	color: var(--text-color);
+	background-color: var(--bg1);
+	border-color: var(--bg1);
+	border-style: solid;
+	border-width: 4px;
+	border-bottom: none;
+	color: var(--text);
 	font-weight: bold;
 	font-size: 18px;
 	margin-top: 35px;
@@ -107,37 +121,29 @@ a {
 }
 
 .header-button-current:hover {
-	background-color: var(--header-button-color-current-hover);
+	opacity: 0.7;
 }
 
 .header-button-current:active {
-	opacity: 0.5;
-}
-
-.header-button:hover {
-	background-color: var(--header-button-color-hover);
-}
-
-.header-button:active {
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 .video-stats {
 	font-size: 14px;
-	color: var(--my-secondary-color);
+	color: var(--text);
 	margin-top: 0;
 	margin-bottom: 20px;
 }
 
-.video-author {
+/* .video-author {
 	font-size: 14px;
-	color: var(--my-tertiary-color);
+	color: var(--text);
 	margin-top: 0px;
 }
 
 .video-description {
 	font-size: 14px;
-	color: var(--text-color);
+	color: var(--text);
 	width: 300px;
 	margin-bottom: 100px;
 }
@@ -158,4 +164,4 @@ a {
 }
 .span-example:hover {
 	text-decoration: underline;
-}
+} */
