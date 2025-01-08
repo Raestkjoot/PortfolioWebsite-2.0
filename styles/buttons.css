@@ -1,0 +1,53 @@
+:root {
+	--my-text-color: rgb(99, 99, 99);
+}
+
+p {
+	font-family: Arial;
+}
+
+.video-title {
+	font-weight: bold;
+	font-size: 18px;
+	width: 300px;
+	line-height: 24px;
+	margin-bottom: 5px;
+}
+
+.video-stats {
+	font-size: 14px;
+	color: var(--my-text-color);
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.video-author {
+	font-size: 14px;
+	color: var(--my-text-color);
+	margin-top: 0px;
+}
+
+.video-description {
+	font-size: 14px;
+	color: var(--my-text-color);
+	width: 300px;
+	margin-bottom: 100px;
+}
+
+.bottom-text {
+	margin-bottom: 50px;
+	font-size: 14px;
+	background-color: rgb(227, 65, 64);
+	color: white;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+
+}
+
+.span-example {
+	cursor: pointer;
+}
+.span-example:hover {
+	text-decoration: underline;
+}
