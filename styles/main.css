@@ -1,6 +1,7 @@
 :root {
 	/* Colors */
 	--text: rgb(237, 237, 231);
+	--sticky-bg: rgb(26, 15, 25);
 	--bg1: rgb(63, 60, 85);
 	--bg2: rgb(40, 42, 54);
 	--bg2-hover: rgb(34, 37, 53);
@@ -9,7 +10,6 @@
 	--button-hover: rgb(161, 28, 75);
 	--button-active: rgb(139, 20, 62);
 	--button-header: rgb(68, 71, 90);
-	--sticky-bg: rgb(109, 43, 107);
 
 /* Default style */
 	background-color: var(--bg1);	
@@ -78,6 +78,16 @@ summary:active {
 	background-color: var(--button-active);
 }
 
+blockquote {
+	margin-left: 9%;
+	margin-right: 10%;
+	padding-left: 15px;
+	border: 0;
+	border-left: 15px;
+	border-color: var(--button);
+	border-style: solid;
+}
+
 .sticky-header {
 	position: sticky;
 	top: 0;
@@ -97,6 +107,10 @@ summary:active {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 10px;
+}
+
+.nav {
+	margin-top: 50px;
 }
 
 .header-button {
@@ -159,6 +173,12 @@ summary:active {
 	margin-bottom: 35px;
 	padding-inline: 10px;
 	gap: 10px;
+}
+
+.project-preview-link {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 18px;
 }
 
 .project-preview {
@@ -269,4 +289,17 @@ summary:active {
 
 .preview-button-small:active {
 	background-color: var(--button-active);
+}
+
+.outer-text-container {
+	padding: 20px;
+}
+
+.text-container {
+	background-color: var(--bg2);
+	margin: 20px;
+	margin-inline: auto;
+	padding: 20px;
+	font-size: 20px;
+	max-width: 1400px;
 }

@@ -16,22 +16,34 @@
 	<div class="sticky-header">
 		<a href="mailto: gunnarmagnum@gmail.com">gunnarmagnum@gmail.com</a>
 		<a class="fa fa-github" style="font-size: 24px;" href="https://github.com/Raestkjoot" target="_blank"></a>
-		<a class="fa fa-linkedin" style="font-size: 24px;" href="https://www.linkedin.com/in/gunnar-magnussen-2b2701197/" target="_blank"></a>
-		
+		<a class="fa fa-linkedin" style="font-size: 24px;" href="https://www.linkedin.com/in/gunnar-magnussen/" target="_blank"></a>
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="theme-color" content="#ffffff">
 	</div>
 
 	<!-- Header with navigation -->
 	<header>
-		<h1>Gunnar Magnussen</h1>
-		<p class="sub-title"><b>Game Programmer</b> | Gameplay, graphics and general game development.</p>
-		<button class="header-button-current"> Projects </button>
-		<button class="header-button"> Experience & Education </button>
-		<button class="header-button"> About Me </button>
+		<div>
+			<h1>Gunnar Magnussen</h1>
+			<p class="sub-title"><b>Game Programmer</b> | Gameplay, graphics and general game development.</p>
+		</div>
+		<div class="nav">
+			<a class="header-button-current" href="index.html"> Projects </a>
+			<a class="header-button" href="exp-and-edu.html"> Experience & Education </a>
+			<a class="header-button" href="about-me.html"> About Me </a>
+		</div>
 	</header>
 
 	<!-- MAIN PROJECTS -->
 	<div class="project-preview-container">
 		<!-- MAIN PROJECT 1 -->
+		<a href="prax.html" class="project-preview-link">
 		<div class="project-preview">
 			<span><img class="preview-image" src="images/PRAX.jpg" alt=""></span>
 			<p>
@@ -48,26 +60,30 @@
 			</p>
 			<button class="preview-button"> READ MORE </button>
 		</div>
+		</a>
 
 		<!-- MAIN PROJECT 2 -->
+		<a href="prax.html" class="project-preview-link">
 		<div class="project-preview">
-			<span></span><img class="preview-image" src="images/downwell.jpg" alt=""></span>
+			<span></span><img class="preview-image" src="images/AEGP.jpg" alt=""></span>
 			<p>
 				<span class="material-symbols-outlined">manufacturing</span>
-				<b>Engine:</b> Custom Engine built on top of a renderer
+				<b>Engine:</b> Custom Engine
 			</p>
 			<p>
 				<span class="material-symbols-outlined">description</span>
-				<b>Language:</b> C++
+				<b>Language:</b> C++ | OpenGL
 			</p>
 			<p>
 				<span class="material-symbols-outlined">list</span>
-					<b>Tasks:</b> Movement
+					<b>Tasks:</b> Movement | Physics | ECS | 2D batch rendering
 			</p>
 			<button class="preview-button"> READ MORE </button>
 		</div>
+	</a>
 
 		<!-- MAIN PROJECT 3 -->
+		<a href="prax.html" class="project-preview-link">
 		<div class="project-preview">
 			<span></span><img class="preview-image" src="images/charryspassage.jpg" alt=""></span>
 			<p>
@@ -85,6 +101,7 @@
 			<button class="preview-button"> READ MORE </button>
 		</div>
  	</div>
+</a>
 
 	<!-- MORE PROJECTS -->
 	<details>
@@ -93,6 +110,7 @@
 		</summary>
 		<div class="project-preview-small-container">
 			<!-- small project 0 -->
+		<a href="prax.html" class="project-preview-link">
 			<div class="project-preview-small">
 				<span><img class="preview-image" src="images/downwell.jpg" alt=""></span>
 				<p>
@@ -109,8 +127,10 @@
 				</p>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
+			</a>
 
 			<!-- small project 1 -->
+		<a href="prax.html" class="project-preview-link">
 			<div class="project-preview-small">
 				<span><img class="preview-image" src="images/projectinvicta.jpg" alt=""></span>
 				<p>
@@ -127,8 +147,10 @@
 				</p>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
+			</a>
 
 			<!-- small project 2 -->
+		<a href="prax.html" class="project-preview-link">
 			<div class="project-preview-small">
 				<span><img class="preview-image" src="images/archeryCodingChallenge.jpg" alt=""></span>
 				<p>
@@ -145,8 +167,10 @@
 				</p>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
+			</a>
 
 			<!-- small project 3 -->
+		<a href="prax.html" class="project-preview-link">
 			<div class="project-preview-small">
 				<span><img class="preview-image" src="images/ue5-fps.jpg" alt=""></span>
 				<p>
@@ -155,7 +179,7 @@
 				</p>
 				<p>
 					<span class="material-symbols-outlined">description</span>
-					C++ & Blueprint
+					C++ | Blueprint
 				</p>
 				<p>
 					<span class="material-symbols-outlined">list</span>
@@ -163,13 +187,15 @@
 				</p>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
+			</a>
 
 			<!-- small project 4 -->
+		<a href="prax.html" class="project-preview-link">
 			<div class="project-preview-small">
 				<span><img class="preview-image" src="images/badApple_OpenGLDots.jpg" alt=""></span>
 				<p>
 					<span class="material-symbols-outlined">description</span>
-					C++ & OpenGL
+					C++ | OpenGL
 				</p>
 				<p>
 					<span class="material-symbols-outlined">list</span>
@@ -177,6 +203,7 @@
 				</p>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
+			</a>
 
 		</div>
 	</details>
