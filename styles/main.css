@@ -1,25 +1,18 @@
 :root {
 	/* Colors */
+	--text: rgb(237, 237, 231);
 	--bg1: rgb(63, 60, 85);
 	--bg2: rgb(40, 42, 54);
+	--bg2-hover: rgb(34, 37, 53);
+	--bg2-active: rgb(26, 28, 41);
 	--button: rgb(181, 37, 88);
+	--button-hover: rgb(161, 28, 75);
+	--button-active: rgb(139, 20, 62);
 	--button-header: rgb(68, 71, 90);
-	--text: rgb(237, 237, 231);
+	--sticky-bg: rgb(109, 43, 107);
 
 /* Default style */
-	background-color: var(--bg1);
-	--secondary-bg-color: rgb(32, 32, 32);
-	--text-color: rgb(248, 248, 242);
-	--header-button-color: rgb(47, 49, 41);
-	--header-button-color-hover: rgb(85, 87, 80);
-	--header-button-color-current: rgb(249, 38, 114);
-	--header-button-color-current-hover: rgb(255, 104, 159);
-	--button-color: rgb(13, 63, 73);
-
-	--my-primary-color: rgb(253, 151, 31);
-	--my-secondary-color: rgb(102, 217, 239);
-	--my-tertiary-color: rgb(249, 38, 114);
-	
+	background-color: var(--bg1);	
 	font-family: Arial;
 	color: var(--text);
 }
@@ -52,6 +45,37 @@ div {
 
 a {
 	color: var(--text);
+	text-decoration: none;
+	font-size: 24px;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+a:active {
+	opacity: 0.3;
+}
+
+i {
+	display: flex;
+}
+
+summary {
+	background-color: var(--button);
+	font-size: 30px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+summary:hover {
+	background-color: var(--button-hover);
+}
+
+summary:active {
+	background-color: var(--button-active);
 }
 
 .sticky-header {
@@ -59,13 +83,13 @@ a {
 	top: 0;
 	padding: 6px;
 	padding-left: 20px;
+	gap: 20px;
 	margin: 0;
-	background-color: var(--button);
-}
-
-.sticky-header-text {
-	padding: 0;
-	margin: 0;
+	background-color: var(--sticky-bg);
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	
 }
 
 .sub-title {
@@ -128,40 +152,121 @@ a {
 	opacity: 0.3;
 }
 
-.video-stats {
-	font-size: 14px;
-	color: var(--text);
-	margin-top: 0;
-	margin-bottom: 20px;
+.project-preview-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 45px;
+	margin-bottom: 35px;
+	padding-inline: 10px;
+	gap: 10px;
 }
 
-/* .video-author {
-	font-size: 14px;
-	color: var(--text);
-	margin-top: 0px;
-}
-
-.video-description {
-	font-size: 14px;
-	color: var(--text);
-	width: 300px;
-	margin-bottom: 100px;
-}
-
-.bottom-text {
-	margin-bottom: 50px;
-	font-size: 14px;
-	background-color: rgb(227, 65, 64);
-	color: white;
-	text-align: center;
-	padding-top: 18px;
-	padding-bottom: 18px;
-
-}
-
-.span-example {
+.project-preview {
+	width: 480px;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: var(--bg2);
+	position: relative;
+	border: 15px;
+	border-style: solid;
+	border-color: var(--bg2);
 	cursor: pointer;
 }
-.span-example:hover {
-	text-decoration: underline;
-} */
+
+.project-preview:hover {
+	background-color: var(--bg2-hover);
+	border-color: var(--bg2-hover);
+}
+
+.project-preview:active {
+	background-color: var(--bg2-active);
+	border-color: var(--bg2-active);
+}
+
+.preview-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.preview-button {
+	background-color: var(--button);
+	color: var(--text);
+	border-style: none;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+.preview-button:hover {
+	background-color: var(--button-hover);
+}
+
+.preview-button:active {
+	background-color: var(--button-active);
+}
+
+.project-preview-small-container {
+	/* display: flex; */
+	display: -webkit-flex;
+	/* webkit-flex-direction: column; */
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* flex-direction: row; */
+	margin-top: 45px;
+	margin-bottom: 35px;
+	padding-inline: 10px;
+	gap: 10px;
+}
+
+.project-preview-small {
+	width: 300px;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--bg2);
+	position: relative;
+	border: 10px;
+	border-style: solid;
+	border-color: var(--bg2);
+	cursor: pointer;
+	display: fle;
+}
+
+.project-preview-small:hover {
+	background-color: var(--bg2-hover);
+	border-color: var(--bg2-hover);
+}
+
+.project-preview-small:active {
+	background-color: var(--bg2-active);
+	border-color: var(--bg2-active);
+}
+
+.preview-button-small {
+	background-color: var(--button);
+	color: var(--text);
+	border-style: none;
+	font-weight: bold;
+	font-size: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+.preview-button-small:hover {
+	background-color: var(--button-hover);
+}
+
+.preview-button-small:active {
+	background-color: var(--button-active);
+}

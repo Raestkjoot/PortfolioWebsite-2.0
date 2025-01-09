@@ -6,14 +6,21 @@
 <head>
 	<title>Gunnar Portfolio</title>
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=description,list,manufacturing" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!-- Body is for everything on the page -->
 <body>
+	<!-- Sticky header -->
 	<div class="sticky-header">
-		<p class="sticky-header-text"><a href="mailto: gunnarmagnum@gmail.com">gunnarmagnum@gmail.com</a></p>
+		<a href="mailto: gunnarmagnum@gmail.com">gunnarmagnum@gmail.com</a>
+		<a class="fa fa-github" style="font-size: 24px;" href="https://github.com/Raestkjoot" target="_blank"></a>
+		<a class="fa fa-linkedin" style="font-size: 24px;" href="https://www.linkedin.com/in/gunnar-magnussen-2b2701197/" target="_blank"></a>
+		
 	</div>
 
+	<!-- Header with navigation -->
 	<header>
 		<h1>Gunnar Magnussen</h1>
 		<p class="sub-title"><b>Game Programmer</b> | Gameplay, graphics and general game development.</p>
@@ -22,8 +29,157 @@
 		<button class="header-button"> About Me </button>
 	</header>
 
-<p class="video-title">
-	This is my work in progress website.
-</p>
+	<!-- MAIN PROJECTS -->
+	<div class="project-preview-container">
+		<!-- MAIN PROJECT 1 -->
+		<div class="project-preview">
+			<span><img class="preview-image" src="images/PRAX.jpg" alt=""></span>
+			<p>
+				<span class="material-symbols-outlined">manufacturing</span>
+				<b>Engine:</b> Unity
+			</p>
+			<p>
+				<span class="material-symbols-outlined">description</span>
+				<b>Language:</b> C#
+			</p>
+			<p>
+				<span class="material-symbols-outlined">list</span>
+					<b>Tasks:</b> Movement | shaders | 3D art
+			</p>
+			<button class="preview-button"> READ MORE </button>
+		</div>
+
+		<!-- MAIN PROJECT 2 -->
+		<div class="project-preview">
+			<span></span><img class="preview-image" src="images/downwell.jpg" alt=""></span>
+			<p>
+				<span class="material-symbols-outlined">manufacturing</span>
+				<b>Engine:</b> Custom Engine built on top of a renderer
+			</p>
+			<p>
+				<span class="material-symbols-outlined">description</span>
+				<b>Language:</b> C++
+			</p>
+			<p>
+				<span class="material-symbols-outlined">list</span>
+					<b>Tasks:</b> Movement
+			</p>
+			<button class="preview-button"> READ MORE </button>
+		</div>
+
+		<!-- MAIN PROJECT 3 -->
+		<div class="project-preview">
+			<span></span><img class="preview-image" src="images/charryspassage.jpg" alt=""></span>
+			<p>
+				<span class="material-symbols-outlined">manufacturing</span>
+				<b>Engine:</b> Unity
+			</p>
+			<p>
+				<span class="material-symbols-outlined">description</span>
+				<b>Language:</b> C#
+			</p>
+			<p>
+				<span class="material-symbols-outlined">list</span>
+					<b>Tasks:</b> Dialogue system | tech lead | shaders | tech art
+			</p>
+			<button class="preview-button"> READ MORE </button>
+		</div>
+ 	</div>
+
+	<!-- MORE PROJECTS -->
+	<details>
+		<summary>
+			More Projects
+		</summary>
+		<div class="project-preview-small-container">
+			<!-- small project 0 -->
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/downwell.jpg" alt=""></span>
+				<p>
+					<span class="material-symbols-outlined">manufacturing</span>
+					Custom Engine built on renderer
+				</p>
+				<p>
+					<span class="material-symbols-outlined">description</span>
+					C++
+				</p>
+				<p>
+					<span class="material-symbols-outlined">list</span>
+						Movement
+				</p>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+
+			<!-- small project 1 -->
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/projectinvicta.jpg" alt=""></span>
+				<p>
+					<span class="material-symbols-outlined">manufacturing</span>
+					Unreal
+				</p>
+				<p>
+					<span class="material-symbols-outlined">description</span>
+					Blueprint
+				</p>
+				<p>
+					<span class="material-symbols-outlined">list</span>
+						Tech lead | 2D sprites on hex grids
+				</p>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+
+			<!-- small project 2 -->
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/archeryCodingChallenge.jpg" alt=""></span>
+				<p>
+					<span class="material-symbols-outlined">manufacturing</span>
+					Unity
+				</p>
+				<p>
+					<span class="material-symbols-outlined">description</span>
+					C#
+				</p>
+				<p>
+					<span class="material-symbols-outlined">list</span>
+						Movement | projectile impact
+				</p>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+
+			<!-- small project 3 -->
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/ue5-fps.jpg" alt=""></span>
+				<p>
+					<span class="material-symbols-outlined">manufacturing</span>
+					Unreal
+				</p>
+				<p>
+					<span class="material-symbols-outlined">description</span>
+					C++ & Blueprint
+				</p>
+				<p>
+					<span class="material-symbols-outlined">list</span>
+						Movement | shooting | turrets
+				</p>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+
+			<!-- small project 4 -->
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/badApple_OpenGLDots.jpg" alt=""></span>
+				<p>
+					<span class="material-symbols-outlined">description</span>
+					C++ & OpenGL
+				</p>
+				<p>
+					<span class="material-symbols-outlined">list</span>
+						Rasterization | Video to bitmap points
+				</p>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+
+		</div>
+	</details>
+
 </body>
 </html>
