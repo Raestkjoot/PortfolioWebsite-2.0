@@ -59,6 +59,11 @@ a:active {
 
 i {
 	display: flex;
+	margin: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-size: 18px;
 }
 
 summary {
@@ -182,8 +187,8 @@ blockquote {
 }
 
 .project-preview {
-	width: 480px;
-	height: 450px;
+	max-width: 480px;
+	height: 430px;
 	margin-left: auto;
 	margin-right: auto;
 	
