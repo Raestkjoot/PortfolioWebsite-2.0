@@ -269,7 +269,6 @@ blockquote {
 	border-style: solid;
 	border-color: var(--bg2);
 	cursor: pointer;
-	display: fle;
 }
 
 .project-preview-small:hover {
@@ -315,4 +314,46 @@ blockquote {
 	padding: 80px;
 	font-size: 20px;
 	max-width: 1200px;
+}
+
+.project-overview {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	gap: 20px;
+}
+
+.project-overview-elem {
+	max-width: 600px;
+}
+
+.project-image-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+.project-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	height: 210px;
+}
+
+.links-button {
+	font-size: 18px;
+	padding: 2px;
+	background-color: var(--button);
+	font-weight: 500;
+}
+
+.links-button:hover {
+	background-color: var(--button-hover);
+}
+
+.links-button:active {
+	background-color: var(--button-active);
 }
