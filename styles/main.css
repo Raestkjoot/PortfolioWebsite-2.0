@@ -26,7 +26,7 @@ header {
 	text-align: center;
 	background-color: var(--bg2);
 	padding: 0;
-	padding-top: 10px;
+	padding-top: 50px;
 	margin: 0;
 }
 
@@ -94,7 +94,8 @@ blockquote {
 }
 
 .sticky-header {
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	top: 0;
 	padding: 6px;
 	padding-left: 20px;
