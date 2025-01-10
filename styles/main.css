@@ -9,7 +9,7 @@
 	--button: rgb(181, 37, 88);
 	--button-hover: rgb(161, 28, 75);
 	--button-active: rgb(139, 20, 62);
-	--button-header: rgb(68, 71, 90);
+	--button-header-back: rgb(50, 48, 70);
 
 /* Default style */
 	background-color: var(--bg1);	
@@ -49,14 +49,6 @@ a {
 	font-size: 24px;
 }
 
-a:hover {
-	opacity: 0.7;
-}
-
-a:active {
-	opacity: 0.3;
-}
-
 i {
 	display: flex;
 	margin: 20px;
@@ -93,6 +85,14 @@ blockquote {
 	border-style: solid;
 }
 
+.sticky-header-button {
+	color: var(--text);
+}
+
+.sticky-header-button:hover {
+	opacity: 0.7;
+}
+
 .sticky-header {
 	position: sticky;
 	top: 0;
@@ -119,26 +119,29 @@ blockquote {
 }
 
 .header-button {
-	background-color: transparent;
-	border-color: var(--bg1);
+	background-color: var(--button-header-back);
+	border-color: var(--button-header-back);
 	border-style: solid;
 	border-width: 4px;
 	border-bottom: none;
 	color: var(--text);
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 35px;
 	margin-left: 5px;
 	margin-right: 5px;
-	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 0;
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 
 .header-button:hover {
-	background-color: var(--bg1);
-	opacity: 0.7;
+	border-color: var(--button);
+	border-style: solid;
+	border-width: 4px;
+	border-bottom: none;
 }
 
 .header-button:active {
@@ -153,18 +156,22 @@ blockquote {
 	border-bottom: none;
 	color: var(--text);
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 35px;
 	margin-left: 5px;
 	margin-right: 5px;
-	padding: 10px;
-	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 2px;
+	padding-left: 25px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 
 .header-button-current:hover {
-	opacity: 0.7;
+	border-color: var(--button);
+	border-style: solid;
+	border-width: 4px;
+	border-bottom: 0;
 }
 
 .header-button-current:active {
@@ -304,7 +311,7 @@ blockquote {
 	background-color: var(--bg2);
 	margin: 20px;
 	margin-inline: auto;
-	padding: 20px;
+	padding: 80px;
 	font-size: 20px;
-	max-width: 1400px;
+	max-width: 1200px;
 }
