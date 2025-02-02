@@ -6,15 +6,17 @@
 	--bg2: rgb(40, 42, 54);
 	--bg2-hover: rgb(34, 37, 53);
 	--bg2-active: rgb(26, 28, 41);
+	--details-bg: rgb(58, 49, 73);
 	--button: rgb(181, 37, 88);
 	--button-hover: rgb(161, 28, 75);
 	--button-active: rgb(139, 20, 62);
 	--button-header-back: rgb(50, 48, 70);
 
 /* Default style */
-	background-color: var(--bg1);	
+	background-color: var(--bg1);
 	font-family: Arial;
 	color: var(--text);
+	scrollbar-color: var(--button) var(--bg2);
 }
 
 body {
@@ -75,6 +77,13 @@ summary:active {
 	background-color: var(--button-active);
 }
 
+details {
+	background-color: var(--details-bg);
+	margin: 20px;
+	border-style: solid;
+	border-color: var(--button);
+}
+
 blockquote {
 	margin-left: 9%;
 	margin-right: 10%;
@@ -105,7 +114,7 @@ blockquote {
 	z-index: 1;
 	display: flex;
 	flex-direction: row;
-	
+
 }
 
 .sub-title {
@@ -199,7 +208,6 @@ blockquote {
 	height: 430px;
 	margin-left: auto;
 	margin-right: auto;
-	
 	background-color: var(--bg2);
 	position: relative;
 	border: 15px;
@@ -229,6 +237,7 @@ blockquote {
 	border-style: none;
 	font-weight: bold;
 	font-size: 18px;
+	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	position: absolute;
@@ -256,15 +265,17 @@ blockquote {
 	margin-bottom: 35px;
 	padding-inline: 10px;
 	gap: 10px;
+	max-width: 100%;
 }
 
 .project-preview-small {
-	width: 300px;
-	height: 350px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 390px;
+	height: 368px;
+	margin: 15px;
+	margin-inline: auto;
 	background-color: var(--bg2);
 	position: relative;
+	display: block;
 	border: 10px;
 	border-style: solid;
 	border-color: var(--bg2);
@@ -286,11 +297,12 @@ blockquote {
 	color: var(--text);
 	border-style: none;
 	font-weight: bold;
-	font-size: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	font-size: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 	position: absolute;
 	bottom: 0;
+	margin-top: 20px;
 	width: 100%;
 	cursor: pointer;
 }
@@ -356,4 +368,16 @@ blockquote {
 
 .links-button:active {
 	background-color: var(--button-active);
+}
+
+.about-me-elem {
+	max-width: 480px;
+	height: 430px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--bg2);
+	position: relative;
+	border: 15px;
+	border-style: solid;
+	border-color: var(--bg2);
 }

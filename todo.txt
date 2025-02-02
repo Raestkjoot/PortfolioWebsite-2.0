@@ -1,1 +1,31 @@
 https://youtu.be/G3e-cpL7ofc?si=ylCYac5eHZYD_TMa&t=1063
+
+[] About Me page
+	[] Citation for Sofus on Judo image
+	[] Add favorite games / what inspires me / what I want to work on
+	[] Image of Hades and Luck with Study
+	[] Link to Neocities? (maybe, once I have that)
+[] Use svg data for all icons, no external links
+[] Update code color theme
+[] Add new projects
+	[] AEGP - G-Engine & Platformer Prototype
+	[] HiPerf - Castle Catapult Defence
+	[] Thesis - Weapon System using GAS
+	[] Shadow Mapping
+[] Elaborate on projects
+	[] Invicta
+	[] Archery
+	[] UE5 FPS
+[] Left align the small projects? (Currently, if I add more they will be added to the center of the page which looks kinda weird)
+	[] Also, add some dynamic scaling to them so they won't look huge on mobile or half-monitor windows
+[] Make sure it works on mobile
+
+
+[x] Transfer all projects from portfolio 1.0
+	[x] PRAX
+	[x] Helluva Ride
+	[x] Downspace
+	[x] Invicta
+	[x] Archery Coding Challenge
+	[x] Unreal FPS Challenge
+	[x] Bad Apple

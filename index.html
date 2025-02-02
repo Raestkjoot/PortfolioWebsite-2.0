@@ -16,6 +16,22 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
+	<!-- Expand element (More Projects) - session storage -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+				const details = document.getElementById("more-projects");
+
+				// Restore state from sessionStorage
+				if (sessionStorage.getItem("details-open") === "true") {
+						details.setAttribute("open", "true");
+				}
+
+				// Save state when toggled
+				details.addEventListener("toggle", function () {
+						sessionStorage.setItem("details-open", details.open);
+				});
+		});
+</script>
 </head>
 
 <!-- Body is for everything on the page -->
@@ -60,65 +76,66 @@
 			</i>
 			<i>
 				<span class="material-symbols-outlined">list</span>
-				&nbsp;<b>Tasks:</b>&nbsp; Movement | shaders | 3D art
+				&nbsp;<b>Tasks:</b>&nbsp; Movement | Shaders | 3D art
 			</i>
 			<button class="preview-button"> READ MORE </button>
 		</div>
 		</a>
 
 		<!-- MAIN PROJECT 2 -->
-		<a href="prax.html" class="project-preview-link">
-		<div class="project-preview">
-			<span></span><img class="preview-image" src="images/AEGP.jpg" alt=""></span>
-			<i>
-				<span class="material-symbols-outlined">manufacturing</span>
-				&nbsp;<b>Engine:</b>&nbsp; Custom Engine
-			</i>
-			<i>
-				<span class="material-symbols-outlined">description</span>
-				&nbsp;<b>Language:</b>&nbsp; C++ | OpenGL
-			</i>
-			<i>
-				<span class="material-symbols-outlined">list</span>
-				&nbsp;<b>Tasks:</b>&nbsp; Movement | Physics | ECS | 2D batch rendering
-			</i>
-			<button class="preview-button"> READ MORE </button>
-		</div>
-	</a>
-
+		<a href="darkswarm.html" class="project-preview-link">
+			<div class="project-preview">
+				<span></span><img class="preview-image" src="images/DARKSWARM.jpg" alt=""></span>
+				<div>
+				<i>
+					<span class="material-symbols-outlined">manufacturing</span>
+					&nbsp;<b>Engine:</b>&nbsp; Unreal
+				</i>
+				<i>
+					<span class="material-symbols-outlined">description</span>
+					&nbsp;<b>Language:</b>&nbsp; C++ & Blueprint
+				</i>
+				<i>
+					<span class="material-symbols-outlined">list</span>
+					&nbsp;<b>Tasks:</b>&nbsp; Weapon System | GAS
+				</i>
+			</div>
+				<button class="preview-button"> READ MORE </button>
+			</div>
+			</a>
+		
 		<!-- MAIN PROJECT 3 -->
-		<a href="prax.html" class="project-preview-link">
-		<div class="project-preview">
-			<span></span><img class="preview-image" src="images/charryspassage.jpg" alt=""></span>
-			<div>
-			<i>
-				<span class="material-symbols-outlined">manufacturing</span>
-				&nbsp;<b>Engine:</b>&nbsp; Unity
-			</i>
-			<i>
-				<span class="material-symbols-outlined">description</span>
-				&nbsp;<b>Language:</b>&nbsp; C#
-			</i>
-			<i>
-				<span class="material-symbols-outlined">list</span>
-				&nbsp;<b>Tasks:</b>&nbsp; Dialogue system | tech lead | shaders | tech art
-			</i>
-		</div>
-			<button class="preview-button"> READ MORE </button>
-		</div>
- 	</div>
-</a>
+		<a href="todo.html" class="project-preview-link">
+			<div class="project-preview">
+				<span></span><img class="preview-image" src="images/GEPP.jpg" alt=""></span>
+				<i>
+					<span class="material-symbols-outlined">manufacturing</span>
+					&nbsp;<b>Engine:</b>&nbsp; Custom Engine
+				</i>
+				<i>
+					<span class="material-symbols-outlined">description</span>
+					&nbsp;<b>Language:</b>&nbsp; C++ | OpenGL
+				</i>
+				<i>
+					<span class="material-symbols-outlined">list</span>
+					&nbsp;<b>Tasks:</b>&nbsp; Movement | Physics | ECS | 2D batch rendering
+				</i>
+				<button class="preview-button"> READ MORE </button>
+			</div>
+		</a>
+
+</div>
 
 	<!-- MORE PROJECTS -->
-	<details>
+	<details id="more-projects">
 		<summary>
 			More Projects
 		</summary>
 		<div class="project-preview-small-container">
 			<!-- small project 0 -->
-		<a href="prax.html" class="project-preview-link">
+		<a href="downspace.html" class="project-preview-link">
 			<div class="project-preview-small">
-				<span><img class="preview-image" src="images/downwell.jpg" alt=""></span>
+				<span><img class="preview-image" src="images/DOWNSPACE.jpg" alt=""></span>
 				<i>
 					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
 					Custom Engine built on renderer
@@ -129,16 +146,36 @@
 				</i>
 				<i>
 					<span class="material-symbols-outlined">list</span>&nbsp;
-						Movement
+						Movement | Level generation
 				</i>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
 			</a>
 
 			<!-- small project 1 -->
-		<a href="prax.html" class="project-preview-link">
+		<a href="charrys-passage.html" class="project-preview-link">
 			<div class="project-preview-small">
-				<span><img class="preview-image" src="images/projectinvicta.jpg" alt=""></span>
+				<span><img class="preview-image" src="images/CHARRYS.jpg" alt=""></span>
+				<i>
+					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
+					Unity
+				</i>
+				<i>
+					<span class="material-symbols-outlined">description</span>&nbsp;
+					C#
+				</i>
+				<i>
+					<span class="material-symbols-outlined">list</span>&nbsp;
+					Dialogue system | Tech lead | Shaders
+				</i>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+			</a>
+
+			<!-- small project 2 -->
+		<a href="invicta.html" class="project-preview-link">
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/INVICTA.jpg" alt=""></span>
 				<i>
 					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
 					Unreal
@@ -155,30 +192,10 @@
 			</div>
 			</a>
 
-			<!-- small project 2 -->
-		<a href="prax.html" class="project-preview-link">
-			<div class="project-preview-small">
-				<span><img class="preview-image" src="images/archeryCodingChallenge.jpg" alt=""></span>
-				<i>
-					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
-					Unity
-				</i>
-				<i>
-					<span class="material-symbols-outlined">description</span>&nbsp;
-					C#
-				</i>
-				<i>
-					<span class="material-symbols-outlined">list</span>&nbsp;
-						Movement | projectile impact
-				</i>
-				<button class="preview-button-small"> READ MORE </button>
-			</div>
-			</a>
-
 			<!-- small project 3 -->
-		<a href="prax.html" class="project-preview-link">
+		<a href="ue5-fps.html" class="project-preview-link">
 			<div class="project-preview-small">
-				<span><img class="preview-image" src="images/ue5-fps.jpg" alt=""></span>
+				<span><img class="preview-image" src="images/UE5FPS.jpg" alt=""></span>
 				<i>
 					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
 					Unreal
@@ -189,17 +206,20 @@
 				</i>
 				<i>
 					<span class="material-symbols-outlined">list</span>&nbsp;
-						Movement | shooting | turrets
+						Movement | Shooting | Turrets
 				</i>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
 			</a>
 
 			<!-- small project 4 -->
-		<a href="prax.html" class="project-preview-link">
+		<a href="bad-apple.html" class="project-preview-link">
 			<div class="project-preview-small">
-				<span><img class="preview-image" src="images/badApple_OpenGLDots.jpg" alt=""></span>
-				<i></i>
+				<span><img class="preview-image" src="images/BADAPPLE.jpg" alt=""></span>
+				<i>
+					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
+					Custom Engine 
+				</i>
 				<i>
 					<span class="material-symbols-outlined">description</span>&nbsp;
 					C++ | OpenGL
@@ -207,6 +227,66 @@
 				<i>
 					<span class="material-symbols-outlined">list</span>&nbsp;
 						Rasterization | Video to bitmap points
+				</i>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+			</a>
+
+			<!-- small project 5 -->
+		<a href="archery.html" class="project-preview-link">
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/ARCHERY.jpg" alt=""></span>
+				<i>
+					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
+					Unity
+				</i>
+				<i>
+					<span class="material-symbols-outlined">description</span>&nbsp;
+					C#
+				</i>
+				<i>
+					<span class="material-symbols-outlined">list</span>&nbsp;
+						Movement | Projectile impact
+				</i>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+			</a>
+
+			<!-- small project 6 -->
+		<a href="todo.html" class="project-preview-link">
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/TODO.jpg" alt=""></span>
+				<i>
+					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
+					Custom Engine 
+				</i>
+				<i>
+					<span class="material-symbols-outlined">description</span>&nbsp;
+					C++ | OpenGL
+				</i>
+				<i>
+					<span class="material-symbols-outlined">list</span>&nbsp;
+					Graphics | Shadow mapping
+				</i>
+				<button class="preview-button-small"> READ MORE </button>
+			</div>
+			</a>
+
+			<!-- small project 7 -->
+		<a href="todo.html" class="project-preview-link">
+			<div class="project-preview-small">
+				<span><img class="preview-image" src="images/TODO.jpg" alt=""></span>
+				<i>
+					<span class="material-symbols-outlined">manufacturing</span>&nbsp;
+					Unity
+				</i>
+				<i>
+					<span class="material-symbols-outlined">description</span>&nbsp;
+					C#
+				</i>
+				<i>
+					<span class="material-symbols-outlined">list</span>&nbsp;
+					ECS | DOTS
 				</i>
 				<button class="preview-button-small"> READ MORE </button>
 			</div>
